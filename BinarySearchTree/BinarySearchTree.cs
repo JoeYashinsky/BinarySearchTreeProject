@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    class BinarySearchClass
+    class BinarySearchTree
     {
     }
 }
