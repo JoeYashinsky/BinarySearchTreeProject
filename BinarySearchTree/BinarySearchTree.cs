@@ -26,7 +26,32 @@ namespace BinarySearchTree
                 Node currentNode = rootNode;
                 while (true)
                 {
+                    if (nodeToAdd.data < currentNode.data)
+                    {
+                        if (currentNode.leftNode == null)
+                        {
+                            currentNode.leftNode = nodeToAdd;
+                            break;
+                        }
+                        else
+                        {
+                            currentNode = currentNode.leftNode;
+                        }
+                    }
+                                                                //now can do the inverse with greater than/rightNode
+                    else if(nodeToAdd.data > currentNode.data)
+                    {
+                        if (currentNode.rightNode == null)
+                        {
+                            currentNode.rightNode = nodeToAdd;
+                            break;
+                        }
 
+                        else
+                        {
+                            currentNode = currentNode.rightNode;
+                        }
+                    }
                 }
             }
         }
