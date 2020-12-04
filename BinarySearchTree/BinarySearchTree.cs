@@ -54,6 +54,28 @@ namespace BinarySearchTree
                     }
                 }
             }
+
+            public Node Search(int value)
+            {
+                Node currentNode;
+                if(rootNode == null)
+                {
+                    return null;
+                }
+                if (value == rootNode.data)
+                {
+                    return rootNode;
+                }
+                else if (value > rootNode.data)
+                {
+                    currentNode = rootNode.rightNode;   
+                }
+                else if (value < rootNode.data)
+                {
+                    currentNode = rootNode.leftNode;
+                }
+                return
+            }
         }
 
     }
